@@ -109,5 +109,150 @@
         </div>
       </div>
     </section>
+
+    <!-- features -->
+    <section id="features">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- what's different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            What's different about Manage?
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            commodi nulla beatae ducimus distinctio blanditiis optio corporis
+            ipsam fugit illo.
+          </p>
+        </div>
+
+        <!-- numbered list -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- list item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- header -->
+            <!-- in the header, we'll flex the number and the heading -->
+            <!-- we need a bg color for the header on sm screens -->
+            <!-- if you put the color in a flex container, it will only extend to its content -->
+            <!-- so we need a block level div to put the color on it -->
+            <!-- then we can put the flex in there to hold # & heading-->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <!-- this is the flex container to hold the # and the header -->
+              <div class="flex items-center space-x-2">
+                <!-- the # needs a thicker color to stand out from bg-color -->
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Track company-wide progress
+                </h3>
+              </div>
+            </div>
+            <div>
+              <!-- this div is always there. it's one of the 2 flexed items in the parent div -->
+              <!-- it's h3 and p are flexed row with the # that is left when the h3 in the sibling div becomes hidden on sm screens -->
+              <!-- on sm screens, this header will not be there -->
+              <!-- leaving the p to stand alone as a block element -->
+              <!-- directly under the flexed header containing the # and heading -->
+              <h3 class="hidden text-base font-bold md:mb-4 md:block">
+                Track company-wide progress
+              </h3>
+              <p class="text-darkGrayishBlue">
+                See how your day to day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <!-- list item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- header -->
+            <!-- in the header, we'll flex the number and the heading -->
+            <!-- we need a bg color for the header on sm screens -->
+            <!-- if you put the color in a flex container, it will only extend to its content -->
+            <!-- so we need a block level div to put the color on it -->
+            <!-- then we can put the flex in there to hold # & heading-->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <!-- this is the flex container to hold the # and the header -->
+              <div class="flex items-center space-x-2">
+                <!-- the # needs a thicker color to stand out from bg-color -->
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Advanced built-in report
+                </h3>
+              </div>
+            </div>
+            <div>
+              <!-- this div is always there. it's one of the 2 flexed items in the parent div -->
+              <!-- it's h3 and p are flexed row with the # that is left when the h3 in the sibling div becomes hidden on sm screens -->
+              <!-- on sm screens, this header will not be there -->
+              <!-- leaving the p to stand alone as a block element -->
+              <!-- directly under the flexed header containing the # and heading -->
+              <h3 class="hidden text-base font-bold md:mb-4 md:block">
+                Track company-wide progress
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customizable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <!-- list item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- header -->
+            <!-- in the header, we'll flex the number and the heading -->
+            <!-- we need a bg color for the header on sm screens -->
+            <!-- if you put the color in a flex container, it will only extend to its content -->
+            <!-- so we need a block level div to put the color on it -->
+            <!-- then we can put the flex in there to hold # & heading-->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <!-- this is the flex container to hold the # and the header -->
+              <div class="flex items-center space-x-2">
+                <!-- the # needs a thicker color to stand out from bg-color -->
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Everything you need in one place
+                </h3>
+              </div>
+            </div>
+            <div>
+              <!-- this div is always there. it's one of the 2 flexed items in the parent div -->
+              <!-- it's h3 and p are flexed row with the # that is left when the h3 in the sibling div becomes hidden on sm screens -->
+              <!-- on sm screens, this header will not be there -->
+              <!-- leaving the p to stand alone as a block element -->
+              <!-- directly under the flexed header containing the # and heading -->
+              <h3 class="hidden text-base font-bold md:mb-4 md:block">
+                Track company-wide progress
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
