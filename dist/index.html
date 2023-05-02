@@ -4,7 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Manage Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Nav -->
+    <!-- unlike w bootstrap, the .container does not use mx-auto by default. you need to add it yourself -->
+    <nav class="relative container mx-auto p-6">
+      <!-- the nav is relative cos we'll position a collapse button on it later -->
+      <!-- the div is a flex container that we'll put an img, nav menu & button in -->
+      <div class="flex items-center justify-between">
+        <!-- first flex item: logo -->
+        <div class="pt-2">
+          <img src="/src/img/logo.svg" alt="" />
+        </div>
+        <!-- second flex item: menu -->
+        <!-- get to know why only space-x-6 is working and noting below or above -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="" class="hover:text-darkGrayishBlue whitespace-nowrap"
+            >About Us</a
+          >
+          <a href="" class="hover:text-darkGrayishBlue">Careers</a>
+          <a href="" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <!-- third flex item: button -->
+        <a
+          href=""
+          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full transition duration-200 ease-in-out whitespace-nowrap baseline md:block hover:bg-brightRedLight"
+          >Getting Started</a
+        >
+        <!-- the paddings will overwrite with the latest padding where there's conflict -->
+
+        <!-- hamburger icon -->
+        <!-- shows up when the nav list disappears. so there's a lot of space for it to show -->
+        <!-- and it becomes the only item on there with the brand logo -->
+        <!-- we are adding a class of .hamburger because we are styling it manually -->
+        <!-- when we click on it, we want the 3 bars to change to a X -->
+        <!-- that's why we are adding a class of .open -->
+        <!-- after styling the .open nicely, we remove/add it using javascript -->
+        <!-- first remove it -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile navigation -->
+      <div class="md:hidden">
+        <!-- use javascript to dynamically toggle the class .hidden -->
+        <!-- but you want it hidden to begin with till the hamburger is clicked -->
+        <!-- but when you add .hidden, adding .flex too is tautology -->
+        <!-- so we'll remove the flex and only add it when the hamburger is clicked (to remove hidden) -->
+        <!-- now when the .flex is added then, the menu will appear in a col as intended  -->
+        <!-- when this is not done, when you just toggle the .hidden and leave the flex, the menu will be flex-row  -->
+        <div
+          id="menu"
+          class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
