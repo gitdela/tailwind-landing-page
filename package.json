@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdela/tailwind-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitdela/tailwind-landing-page/issues"
+  },
+  "homepage": "https://github.com/gitdela/tailwind-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
