@@ -27,3 +27,57 @@ body {
     background-image: url('/src/img/bg-simplify-section-mobile.svg');
   }
 }
+
+/* hamburger menu */
+
+/* this is the menu bar that will show up when the other nav bar items go on sm screens */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+/* styling the bars. for now they will be on top of each other because of positioning */
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  /* these are just to make the opening of the hamburger to X very smooth */
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+/* drop one bar vertically by 7px */
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+/* drop another one vertically by 14px to space them out */
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+/* let's style the opening of the hamburger */
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
