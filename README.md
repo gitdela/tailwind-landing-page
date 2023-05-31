@@ -1,8 +1,10 @@
-Manage Landing Page
+## Manage Landing Page
 
-This is a sample landing page for a fictional product called "Manage". It is a responsive and visually appealing landing page design that showcases the key features and benefits of the Manage product. The landing page is built using purely HTML and TailwindCSS, and it utilizes the flexbox layout for responsive design.
+The landing page is built using purely HTML and TailwindCSS. It is a sample landing page for a fictional product called "Manage". It is a responsive and visually appealing landing page design that showcases the key features and benefits of the Manage product. It utilizes the flexbox layout for responsive design.
 
-Features
+This project was built mainly because I wanted to get conversant with TailwindCSS so I have not built functionality into it yet. The main focus was on design ie; TailwindCSS and CSS. You can access it at https://gitdela.github.io/tailwind-landing-page/
+
+# Features
 
 1. Responsive design: The landing page is designed to be responsive and compatible with different screen sizes, ensuring a consistent user experience across devices.
 2. Navigation menu: The page includes a navigation menu that allows users to easily navigate to different sections of the page.
